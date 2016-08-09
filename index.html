@@ -1,65 +1,84 @@
 <!doctype html>
 <html>
 <head>
-	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-	<title>K.D.</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title>Kenneth Daily</title>
 	<link rel="Shortcut Icon" href="/favicon.ico" type="image/x-icon" />
 	<meta http-equiv="pragma" content="no-cache" />
 	<meta name="robots" content="all" />
 	<meta name="MSSmartTagsPreventParsing" content="true" />
 	<meta http-equiv="imagetoolbar" content="false" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
 	<!--[if lt IE 9]>
 	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
-	<style>
+    <style>
 		* { padding: 0; margin: 0; }
-		body { background-color: #333; }
-		p { color: #fff; font-family: Helvetica; font-size: 16px; line-height: 24px; margin-bottom: 22px; -webkit-font-smoothing: antialiased; }
-		a { color: #fff; font-weight: bold; text-decoration: none; border-bottom: 1px solid rgba(255,255,255,0.3); }
-		a:hover { color: #990000; border-bottom: 1px solid rgba(255,255,255,1); }
+		body {
+			background-color: #333; margin-bottom: 50px;
+			font-family: "Work Sans", -apple-system, BlinkMacSystemFont, "Roboto", "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+		}
+		h2 { color: rgba(255,255,255,0.4); font-size: 40px; font-weight: 200; }
+		p { color: #fff; line-height: 24px; margin-bottom: 18px; -webkit-font-smoothing: antialiased; }
+		a { color: #fff; font-weight: 600; text-decoration: none; padding-bottom: -1px !important; border-bottom: 1px solid rgba(255,255,255,0.3); }
+		strong { font-weight: 600; }
+		a:hover { color: #fff; border-bottom: 1px solid rgba(255,255,255,1); }
 		#monogram { width: 50px; padding: 50px 0 0 0; margin: 0 auto 0 50px; }
-		#about { width: 360px; top: 150px; padding: 0 0 0 150px; margin: -35px 50px 0 auto !important; }
+		#about { width: 400px; margin: 50px auto 0 50px !important; }
+		.initials { opacity: 0.8; }
+		small { color: #fff; opacity: 0.7; font-size: 10px; -webkit-font-smoothing: antialiased; position: absolute; right: 20px; bottom: 20px; }
+		.photo { display: none; }
 		@media (max-width: 767px) {
-			#monogram { position: relative; width: auto; padding: 20px; margin: 0; }
+			body { background-color: #efefef; }
+			p { color: #666;}
+			a { color: #333;}
+			h2 { color: #777; }
+			small { color: #888; }
+			img { max-width: 100%; }
+			.photo { display: inherit; margin: -20px -20px 20px -20px !important; }
 			#about { position: relative; width: auto; padding: 20px; margin: 0 !important; }
-			background-image { opacity: 0.2; }
+			.backstretch { opacity: 0.2; }
 		}
 	</style>
 </head>
 
 <body>
 
-<!-- swap out for a logo -->
-<div id="monogram">
-	<!-- <img src="monogram.png" /> -->
-</div>
+    <!-- swap out for information about yourself -->
+    <div id="about">
 
-<!-- swap out for information about yourself -->
-<div id="about">
-    <h1>Kenneth Daily is a Senior Scientist in the data science group at <a href="http://www.sagebase.org">Sage Bionetworks</a> in Seattle, WA.</h1>
+    	<p class="photo">
+    		<img src="kd_bg.jpg">
+    	</p>
 
-    <p>My interests are in open data and research in the life sciences. I help consortiums collaborate and share data, contribute to our platform Synapse, and teach about bioinformatics and open research.</p>
+        <h2>Kenneth Daily is a Senior Scientist in the data science group at <a href="http://www.sagebase.org">Sage Bionetworks</a> in Seattle, WA.</h2>
 
-    <p>Previously, I completed a postdoctoral fellowship in the Dermatology Branch of the Center for Cancer Research of the National Cancer Institute in the Lab of Dr. Isaac Brownell. I focused on the genomic analysis of Merkel cell carcinoma, a rare, viral associated, aggressive neuroendocrine skin cancer. I integrated a number of high-throughput molecular analyses on tissue samples and cell lines from MCC tumors to learn about the mechanisms of tranformation, identify recurrent somatic mutations, identify druggable targets, and develop a pre-clinical mouse model.</p>
+        <p>My interests are in open data and research in the life sciences. I help consortiums collaborate and share data, contribute to our platform Synapse, and teach about bioinformatics and open research.</p>
 
-    <p>I earned my Ph.D. in Computer Science at the University of California, Irvine and my B.S and M.S. degrees in Informatics from Indiana University.</p>
+        <p>Previously, I completed a postdoctoral fellowship in the Dermatology Branch of the Center for Cancer Research of the National Cancer Institute in the Lab of Dr. Isaac Brownell. I focused on the genomic analysis of Merkel cell carcinoma, a rare, viral associated, aggressive neuroendocrine skin cancer. I integrated a number of high-throughput molecular analyses on tissue samples and cell lines from MCC tumors to learn about the mechanisms of tranformation, identify recurrent somatic mutations, identify druggable targets, and develop a pre-clinical mouse model.</p>
 
-</div>
+        <p>I earned my Ph.D. in Computer Science at the University of California, Irvine and my B.S and M.S. degrees in Informatics from Indiana University.</p>
 
-<!--include jquery & backstretch-->
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-<script type="text/javascript" src="jquery.backstretch.min.js"></script>
-<script type="text/javascript">
-$(function(){
-     $(window).resize(function(){
-         if($(this).width() >= 767){
-             $.backstretch("kd_bg.jpg", {speed: 150});
-         }
-      })
-      .resize();//trigger resize on page load
-});
-</script>
+    	<h2>Networks</h2>
+    	<p><a href="http://twitter.com/sleight82">Twitter</a>, <a href="https://www.linkedin.com/in/kennethdaily">LinkedIn</a>.</p>
+
+    </div>
+
+
+    <!--include jquery & backstretch-->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script type="text/javascript" src="jquery.backstretch.min.js"></script>
+    <script type="text/javascript">
+    $(function(){
+         $(window).resize(function(){
+             if($(this).width() >= 767){
+                 $.backstretch("kd_bg.jpg", {speed: 150});
+             }
+          })
+          .resize();//trigger resize on page load
+    });
+    </script>
 
 </body>
 </html>
